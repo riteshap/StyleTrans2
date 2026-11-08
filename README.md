@@ -292,5 +292,3 @@ pip install torch transformers accelerate peft trl datasets sentence-transformer
 - Stanza English `tokenize`, `pos` and `constituency` resources; any required local NLTK data.
 - A CUDA-capable GPU with sufficient memory is strongly recommended; several scripts explicitly request CUDA, automatic device mapping and/or `bfloat16`. The study used an NVIDIA A800, but the code does not enforce that specific GPU.
 - For SFT pseudo-data generation: a valid API key, access to the configured external model endpoint and an internet connection for requests.
-
-**Reproducibility limitations:** This archive does not include generated intermediate results, the Yelp classifier checkpoint, trained LoRA adapters, pretrained model weights, a locked dependency file, or a one-click experiment runner. Results may depend on model revisions, sampling randomness, external API responses, and local hardware. Verify the paths, model identifiers, sample limits, and evaluation settings before reproducing the paper's experiments.
